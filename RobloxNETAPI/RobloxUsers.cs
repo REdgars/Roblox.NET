@@ -67,7 +67,7 @@ namespace RobloxNET
         public async Task<RUser> GetUserAsync(string username)
         {
             RUser rUser;
-            string apiUrl = $"http://api.roblox.com/marketplace/productinfo?username={username}";
+            string apiUrl = $"http://api.roblox.com/users/get-by-username?username={username}";
 
             using (HttpResponseMessage responseMessage = await httpClient.GetAsync(apiUrl))
             {
