@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace RobloxNET
 {
+    /// <summary>
+    /// A class which is used to get ownership information.
+    /// </summary>
     class RobloxOwnerhsip : IDisposable
     {
         private HttpClient httpClient;

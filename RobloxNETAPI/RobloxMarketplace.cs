@@ -6,6 +6,9 @@ using Newtonsoft.Json;
 
 namespace RobloxNET
 {
+    /// <summary>
+    /// A class which is used to get marketplace products information.
+    /// </summary>
     public class RobloxMarketplace : IDisposable
     {
         private HttpClient httpClient;

@@ -9,6 +9,9 @@ using Newtonsoft.Json;
 
 namespace RobloxNET
 {
+    /// <summary>
+    /// A class which is used to get user information.
+    /// </summary>
     public class RobloxUsers : IDisposable
     {
         private HttpClient httpClient;
