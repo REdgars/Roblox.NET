@@ -18,7 +18,7 @@ Console.WriteLine("Name: {0}", rGroup.Name);
 Console.WriteLine("First role: {0}", rGroup.Roles[0].Name);
 Console.WriteLine("Owner: {0}", rGroup.Owner.Name);
 ```
-## Getting Information of a product in the marketplace
+## Getting information of a product in the marketplace
 ```cs
 RobloxMarketplace robloxMarketplace = new RobloxMarketplace();
 RProductInfo productInfo = await robloxMarketplace.GetProductInfoAsync(123456789);
