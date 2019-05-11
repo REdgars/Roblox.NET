@@ -2,6 +2,7 @@
  An unofficial asynchronus C# API for interacting with http://api.roblox.com
 
 [![Nuget][nuget-release]][nuget-url]
+[![Downloads][nuget-downloads]][nuget-url]
 [![License][github-license]][license-url]
 
 ## Features
@@ -45,3 +46,4 @@ Console.WriteLine("Id: {0}", rUser2.Id);
 [license-url]:https://github.com/oshawott9044/RobloxNET/blob/master/LICENSE
 [nuget-release]:https://img.shields.io/nuget/v/Roblox.NET.svg
 [nuget-url]:https://www.nuget.org/packages/Roblox.NET/
+[nuget-downloads]:https://img.shields.io/nuget/dt/Roblox.NET.svg
