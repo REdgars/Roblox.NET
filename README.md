@@ -1,12 +1,17 @@
 # RobloxNET
-An asynchronus .NET wrapper of the [ROBLOX Api](https://api.roblox.com/docs).
+An unofficial asynchronus .NET wrapper of the [ROBLOX Api](https://api.roblox.com/docs).
 
 **Please note, that this is still not finished yet, some features like getting users and more are missing.
 
-# Features
-Current features are; Marketplace, Groups, Friends.
+## Features
+  - Get Group Information.
+  - Get Marketplace Product Information.
+  - Get an Users friends Information.
+  - more to come.
 
-# Example Code
+## Code Examples
+___
+## Getting Information of a Group
 ```cs
 RobloxGroups robloxGroups = new RobloxGroups();
 RGroup rGroup = await robloxGroups.GetGroupInfoAsync(1234567890);
