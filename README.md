@@ -1,13 +1,11 @@
 # RobloxNET
  An unofficial asynchronus C# API for interacting with http://api.roblox.com
 
-**Please note, that this is still not finished yet, some features like getting users and more are missing.**
-
 ## Features
   - Get group information.
   - Get marketplace product information.
-  - Get an users friends information.
-  - more to come.
+  - Get an user's friends information.
+  - Get an user's information.
 
 ## Code Examples
 ___
@@ -28,4 +26,13 @@ RProductInfo productInfo = await robloxMarketplace.GetProductInfoAsync(123456789
 Console.WriteLine("AssetId: {0}", productInfo.AssetId);
 Console.WriteLine("Price: {0}", productInfo.PriceInRobux);
 Console.WriteLine("Creator: {0}", productInfo.Creator.Name);
+```
+## Getting an users information
+```cs
+RobloxUsers robloxUsers = new RobloxUsers();
+RUser rUser = await robloxUsers.GetUserAsync(123456789);
+RUser rUser2 = await robloxUsers.GetUserAsync("username");
+
+Console.WriteLine("Username: {0}", rUser.Username);
+Console.WriteLine("Id: {0}", rUser2.Id);
 ```
