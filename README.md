@@ -7,7 +7,7 @@ An asynchronus .NET wrapper of the [ROBLOX Api](https://api.roblox.com/docs).
 Current features are; Marketplace, Groups, Friends.
 
 # Example Code
-```
+```cs
 RobloxGroups robloxGroups = new RobloxGroups();
 RGroup rGroup = await robloxGroups.GetGroupInfoAsync(1234567890);
 
