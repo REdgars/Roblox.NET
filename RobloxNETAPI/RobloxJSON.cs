@@ -6,7 +6,7 @@ namespace RobloxNET.JSON
     /// <summary>
     /// The class used to deserialize friendship count JSON
     /// </summary>
-    class FriendShipCountJSON
+    public class FriendShipCountJSON
     {
         [JsonProperty("success")]
         public bool Success { get; set; }
@@ -21,7 +21,7 @@ namespace RobloxNET.JSON
     /// <summary>
     /// The class used to deserialize following exists JSON
     /// </summary>
-    class FollowingExistsJSON
+    public class FollowingExistsJSON
     {
         [JsonProperty("success")]
         public bool Success { get; set; }
@@ -36,7 +36,7 @@ namespace RobloxNET.JSON
     /// <summary>
     /// The class used to deserialize group allies and enemies JSON
     /// </summary>
-    class GroupAlliesEnemiesJSON
+    public class GroupAlliesEnemiesJSON
     {
         [JsonProperty("Groups")]
         public RGroup[] Groups { get; set; }
