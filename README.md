@@ -15,30 +15,36 @@
 ___
 ## Getting information of a group
 ```cs
-RobloxGroups robloxGroups = new RobloxGroups();
-RGroup rGroup = await robloxGroups.GetGroupInfoAsync(1234567890);
+using (RobloxGroups robloxGroups = new RobloxGroups()) 
+{
+   RGroup rGroup = await robloxGroups.GetGroupInfoAsync(1234567890);
 
-Console.WriteLine("Name: {0}", rGroup.Name);
-Console.WriteLine("First role: {0}", rGroup.Roles[0].Name);
-Console.WriteLine("Owner: {0}", rGroup.Owner.Name);
+   Console.WriteLine("Name: {0}", rGroup.Name);
+   Console.WriteLine("First role: {0}", rGroup.Roles[0].Name);
+   Console.WriteLine("Owner: {0}", rGroup.Owner.Name);
+}
 ```
 ## Getting information of a product in the marketplace
 ```cs
-RobloxMarketplace robloxMarketplace = new RobloxMarketplace();
-RProductInfo productInfo = await robloxMarketplace.GetProductInfoAsync(123456789);
+using (RobloxMarketplace robloxMarketplace = new RobloxMarketplace())
+{
+   RProductInfo productInfo = await robloxMarketplace.GetProductInfoAsync(123456789);
 
-Console.WriteLine("AssetId: {0}", productInfo.AssetId);
-Console.WriteLine("Price: {0}", productInfo.PriceInRobux);
-Console.WriteLine("Creator: {0}", productInfo.Creator.Name);
+   Console.WriteLine("AssetId: {0}", productInfo.AssetId);
+   Console.WriteLine("Price: {0}", productInfo.PriceInRobux);
+   Console.WriteLine("Creator: {0}", productInfo.Creator.Name);
+}
 ```
 ## Getting an users information
 ```cs
-RobloxUsers robloxUsers = new RobloxUsers();
-RUser rUser = await robloxUsers.GetUserAsync(123456789);
-RUser rUser2 = await robloxUsers.GetUserAsync("username");
+using (RobloxUsers robloxUsers = new RobloxUsers())
+{
+   RUser rUser = await robloxUsers.GetUserAsync(123456789);
+   RUser rUser2 = await robloxUsers.GetUserAsync("username");
 
-Console.WriteLine("Username: {0}", rUser.Username);
-Console.WriteLine("Id: {0}", rUser2.Id);
+   Console.WriteLine("Username: {0}", rUser.Username);
+   Console.WriteLine("Id: {0}", rUser2.Id);
+}
 ```
 
 <!-- Markdown link & img dfn's -->
