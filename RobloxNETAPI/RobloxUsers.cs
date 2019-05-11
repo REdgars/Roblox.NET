@@ -37,7 +37,7 @@ namespace RobloxNET
         public async Task<RUser> GetUserAsync(long userId)
         {
             RUser rUser;
-            string apiUrl = $"http://api.roblox.com/marketplace/productinfo?assetId={assetId.ToString()}";
+            string apiUrl = $"http://api.roblox.com/users/{userId.ToString()}";
 
             using (HttpResponseMessage responseMessage = await httpClient.GetAsync(apiUrl))
             {
@@ -59,6 +59,35 @@ namespace RobloxNET
             }
         }
 
+        /// <summary>
+        /// Retrieves user information for the specified user username as an asynchronus operation. Throws a <see cref="HttpRequestException"/> if the <see cref="HttpStatusCode"/> isn't <see cref="HttpStatusCode.OK"/>. 
+        /// </summary>
+        /// <param name="userId">The name of the user.</param>
+        /// <returns><see cref="RUser"/></returns>
+        public async Task<RUser> GetUserAsync(string username)
+        {
+            RUser rUser;
+            string apiUrl = $"http://api.roblox.com/marketplace/productinfo?username={username}";
+
+            using (HttpResponseMessage responseMessage = await httpClient.GetAsync(apiUrl))
+            {
+                HttpStatusCode responseCode = responseMessage.StatusCode;
+
+                if (responseCode == HttpStatusCode.OK)
+                {
+                    using (HttpContent responseContent = responseMessage.Content)
+                    {
+                        string responseString = await responseContent.ReadAsStringAsync();
+
+                        rUser = JsonConvert.DeserializeObject<RUser>(responseString);
+                    }
+                }
+                else
+                    throw new HttpRequestException($"HttpResponseStatusCode did not return OK (200), instead it returned {responseCode.ToString()}");
+
+                return rUser;
+            }
+        }
     }
 
     public class RUser
