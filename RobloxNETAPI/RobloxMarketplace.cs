@@ -86,6 +86,9 @@ namespace RobloxNET
         }
     }
 
+    /// <summary>
+    /// Marketplace product information
+    /// </summary>
     public class RProductInfo
     {
         [JsonProperty("TargetId")]
@@ -152,11 +155,20 @@ namespace RobloxNET
         public int ContentRatingTypeId { get; set; }
     }
 
+    /// <summary>
+    /// The product creator.
+    /// </summary>
     public class RProductCreator
     {
+        /// <summary>
+        ///  The id of the creator.
+        /// </summary>
         [JsonProperty("Id")]
         public long Id { get; set; }
 
+        /// <summary>
+        /// The name of the creator.
+        /// </summary>
         [JsonProperty("Name")]
         public string Name { get; set; }
     }

@@ -106,6 +106,9 @@ ipch/
 *.vspx
 *.sap
 
+*.nuspec
+RobloxNETAPI/nuget.exe
+
 # Visual Studio Trace Files
 *.e2e
 
