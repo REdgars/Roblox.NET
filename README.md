@@ -1,6 +1,8 @@
 # RobloxNET
  An unofficial asynchronus C# API for interacting with http://api.roblox.com
 
+[![License][github-license]][license-url]
+
 ## Features
   - Get group information.
   - Get marketplace product information.
@@ -36,3 +38,7 @@ RUser rUser2 = await robloxUsers.GetUserAsync("username");
 Console.WriteLine("Username: {0}", rUser.Username);
 Console.WriteLine("Id: {0}", rUser2.Id);
 ```
+
+<!-- Markdown link & img dfn's -->
+[github-license]:https://img.shields.io/github/license/oshawott9044/RobloxNET.svg
+[license-url]:https://github.com/oshawott9044/RobloxNET/blob/master/LICENSE
