@@ -50,6 +50,7 @@
     <Compile Include="RobloxJSON.cs" />
     <Compile Include="RobloxMarketplace.cs" />
     <Compile Include="RobloxOwnerhsip.cs" />
+    <Compile Include="RobloxUsers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
