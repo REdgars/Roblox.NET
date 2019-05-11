@@ -1,5 +1,5 @@
 # RobloxNET
-An unofficial asynchronus .NET wrapper of the [ROBLOX Api](https://api.roblox.com/docs).
+ An unofficial asynchronus C# API for interacting with http://api.roblox.com
 
 **Please note, that this is still not finished yet, some features like getting users and more are missing.**
 
