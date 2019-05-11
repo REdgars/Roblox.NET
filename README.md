@@ -1,7 +1,7 @@
 # RobloxNET
 An unofficial asynchronus .NET wrapper of the [ROBLOX Api](https://api.roblox.com/docs).
 
-**Please note, that this is still not finished yet, some features like getting users and more are missing.
+**Please note, that this is still not finished yet, some features like getting users and more are missing.**
 
 ## Features
   - Get Group Information.
