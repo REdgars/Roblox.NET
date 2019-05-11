@@ -4,9 +4,9 @@
 **Please note, that this is still not finished yet, some features like getting users and more are missing.**
 
 ## Features
-  - Get Group Information.
-  - Get Marketplace Product Information.
-  - Get an Users friends Information.
+  - Get group information.
+  - Get marketplace product information.
+  - Get an users friends information.
   - more to come.
 
 ## Code Examples
