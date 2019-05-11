@@ -1,6 +1,7 @@
 # RobloxNET
  An unofficial asynchronus C# API for interacting with http://api.roblox.com
 
+[![Nuget][nuget-release]][nuget-url]
 [![License][github-license]][license-url]
 
 ## Features
@@ -42,3 +43,5 @@ Console.WriteLine("Id: {0}", rUser2.Id);
 <!-- Markdown link & img dfn's -->
 [github-license]:https://img.shields.io/github/license/oshawott9044/RobloxNET.svg
 [license-url]:https://github.com/oshawott9044/RobloxNET/blob/master/LICENSE
+[nuget-release]:https://img.shields.io/nuget/v/Roblox.NET.svg
+[nuget-url]:https://www.nuget.org/packages/Roblox.NET/
