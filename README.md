@@ -10,6 +10,7 @@
   - Get marketplace product information.
   - Get an user's friends information.
   - Get an user's information.
+  - Read the [wiki](https://github.com/oshawott9044/Roblox.NET/wiki) for all features.
 
 ## Code Examples
 ___
