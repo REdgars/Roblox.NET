@@ -1,3 +1,5 @@
+# [Starting on May 22, 2023, api.roblox.com will be deprecated and no longer be reachable, this means that this project too will not be working anymore.](https://devforum.roblox.com/t/sunsetting-apirobloxcom-on-may-22-2023/2324429)
+
 # RobloxNET
  An unofficial asynchronus C# API for interacting with http://api.roblox.com
 
